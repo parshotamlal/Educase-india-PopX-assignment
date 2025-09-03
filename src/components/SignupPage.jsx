@@ -38,10 +38,13 @@ const SignupPage = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
       {/* Mobile Container */}
-      <div className="w-[375px] min-h-[812px] bg-white rounded-2xl shadow-2xl p-6">
+      <div className="w-[375px] min-h-[700px] bg-white rounded-2xl shadow-2xl p-6">
         {/* Title */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">
-          Create your PopX account
+        <h1 className="text-2xl font-bold text-gray-900 ">
+          Create your
+        </h1>
+         <h1 className="text-2xl font-bold text-gray-900 mb-4">
+        PopX account
         </h1>
 
         {/* Signup Form */}
@@ -82,7 +85,7 @@ const SignupPage = () => {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
-              placeholder="+91 9876543210"
+              placeholder="+91 "
               className="w-full px-4 py-3 border border-gray-200 rounded-lg 
                          focus:ring-2 focus:ring-purple-500 focus:border-transparent 
                          outline-none transition-all duration-200 placeholder-gray-400"
@@ -104,7 +107,7 @@ const SignupPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="example@email.com"
+              placeholder="xyz@email.com"
               className="w-full px-4 py-3 border border-gray-200 rounded-lg 
                          focus:ring-2 focus:ring-purple-500 focus:border-transparent 
                          outline-none transition-all duration-200 placeholder-gray-400"
@@ -190,7 +193,7 @@ const SignupPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white 
+            className="w-full bg-gradient-to-r from-purple-900 to-purple-700 text-white 
                        py-4 px-6 rounded-xl font-semibold text-lg shadow-lg 
                        hover:from-purple-700 hover:to-purple-800 
                        disabled:opacity-50 disabled:cursor-not-allowed 
@@ -201,15 +204,7 @@ const SignupPage = () => {
           </button>
         </form>
 
-        {/* Back Button */}
-        <div className="mt-6 text-center">
-          <button
-            onClick={() => navigate("/")}
-            className="text-purple-600 hover:text-purple-700 font-medium"
-          >
-            ← Back to Welcome
-          </button>
-        </div>
+      
       </div>
     </div>
   );

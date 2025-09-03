@@ -32,11 +32,14 @@ const LoginPage = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
       {/* Mobile container */}
-      <div className="w-[375px] min-h-[812px] bg-white rounded-2xl shadow-2xl p-6">
+      <div className="w-[375px] min-h-[700px] bg-white rounded-2xl shadow-2xl p-6">
         {/* Title */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Sign in to your PopX account
+            Sign in to your
+          </h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">
+         PopX account
           </h1>
           <p className="text-gray-600 text-sm leading-relaxed">
             Enter your email and password to access your account.
@@ -103,16 +106,7 @@ const LoginPage = () => {
             {isLoading ? "Signing in..." : "Login"}
           </button>
         </form>
-
-        {/* Back button */}
-        <div className="mt-6 text-center">
-          <button
-            onClick={() => navigate("/")}
-            className="text-purple-600 hover:text-purple-700 font-medium"
-          >
-            ← Back to Welcome
-          </button>
-        </div>
+       
       </div>
     </div>
   );
