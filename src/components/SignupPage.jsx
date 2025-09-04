@@ -63,7 +63,7 @@ const SignupPage = () => {
               name="fullName"
               value={formData.fullName}
               onChange={handleChange}
-              placeholder="John Doe"
+              placeholder="Enter Full Name"
               className="w-full px-4 py-3 border border-gray-200 rounded-lg 
                          focus:ring-2 focus:ring-purple-500 focus:border-transparent 
                          outline-none transition-all duration-200 placeholder-gray-400"
@@ -193,7 +193,7 @@ const SignupPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-gradient-to-r from-purple-900 to-purple-700 text-white 
+            className="w-full bg-gradient-to-r from-purple- to-purple-700 text-white 
                        py-4 px-6 rounded-xl font-semibold text-lg shadow-lg 
                        hover:from-purple-700 hover:to-purple-800 
                        disabled:opacity-50 disabled:cursor-not-allowed 

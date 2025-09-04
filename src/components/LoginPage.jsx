@@ -62,7 +62,7 @@ const LoginPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="example@email.com"
+              placeholder="Enter email address"
               className="w-full px-4 py-3 border border-gray-200 rounded-lg 
                          focus:ring-2 focus:ring-purple-500 focus:border-transparent 
                          outline-none transition-all duration-200 placeholder-gray-400"
@@ -84,7 +84,7 @@ const LoginPage = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="********"
+              placeholder="Enter"
               className="w-full px-4 py-3 border border-gray-200 rounded-lg 
                          focus:ring-2 focus:ring-purple-500 focus:border-transparent 
                          outline-none transition-all duration-200 placeholder-gray-400"
@@ -96,12 +96,7 @@ const LoginPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white 
-                       py-4 px-6 rounded-xl font-semibold text-lg shadow-lg 
-                       hover:from-purple-700 hover:to-purple-800 
-                       disabled:opacity-50 disabled:cursor-not-allowed 
-                       transform hover:scale-[1.02] transition-all duration-200 
-                       focus:outline-none focus:ring-4 focus:ring-purple-300"
+            className="w-full py-4 px-6 bg-gray-300 text-white rounded-xl font-semibold text-lg hover:bg-gray-500 transition"
           >
             {isLoading ? "Signing in..." : "Login"}
           </button>
